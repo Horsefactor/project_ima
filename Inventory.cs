@@ -11,7 +11,7 @@ using System.Data.OleDb;
 
 namespace project_ima
 {
-    public partial class UserControl3 : UserControl
+    public partial class Inventory : UserControl
     {
         //connection object to db
         public string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;
@@ -29,7 +29,7 @@ namespace project_ima
         public OleDbDataReader dbReader;
 
 
-        public UserControl3()
+        public Inventory()
         {
             InitializeComponent();
             LoadInventory();

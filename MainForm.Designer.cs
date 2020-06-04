@@ -1,6 +1,6 @@
 ﻿namespace project_ima
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -37,10 +37,10 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.btnBack = new System.Windows.Forms.Button();
-            this.userControl4 = new project_ima.UserControl4();
-            this.userControl3 = new project_ima.UserControl3();
-            this.userControl2 = new project_ima.UserControl2();
-            this.userControl1 = new project_ima.UserControl1();
+            this.userControl4 = new project_ima.AddStock();
+            this.userControl3 = new project_ima.Inventory();
+            this.userControl2 = new project_ima.OrderProposition();
+            this.userControl1 = new project_ima.AddPrint();
             this.panelSideMenu.SuspendLayout();
             this.panelContainer.SuspendLayout();
             this.SuspendLayout();
@@ -186,17 +186,18 @@
             this.userControl4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.userControl4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl4.Location = new System.Drawing.Point(0, 0);
-            this.userControl4.Margin = new System.Windows.Forms.Padding(4);
+            this.userControl4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.userControl4.Name = "userControl4";
             this.userControl4.Size = new System.Drawing.Size(1098, 635);
             this.userControl4.TabIndex = 3;
+            this.userControl4.Load += new System.EventHandler(this.userControl4_Load);
             // 
             // userControl3
             // 
             this.userControl3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.userControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl3.Location = new System.Drawing.Point(0, 0);
-            this.userControl3.Margin = new System.Windows.Forms.Padding(4);
+            this.userControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.userControl3.Name = "userControl3";
             this.userControl3.Size = new System.Drawing.Size(1098, 635);
             this.userControl3.TabIndex = 2;
@@ -206,7 +207,7 @@
             this.userControl2.BackColor = System.Drawing.SystemColors.HotTrack;
             this.userControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl2.Location = new System.Drawing.Point(0, 0);
-            this.userControl2.Margin = new System.Windows.Forms.Padding(4);
+            this.userControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.userControl2.Name = "userControl2";
             this.userControl2.Size = new System.Drawing.Size(1098, 635);
             this.userControl2.TabIndex = 1;
@@ -217,7 +218,7 @@
             this.userControl1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.userControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.userControl1.Name = "userControl1";
             this.userControl1.Size = new System.Drawing.Size(1098, 635);
             this.userControl1.TabIndex = 0;
@@ -251,11 +252,11 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panelContainer;
-        private UserControl1 userControl1;
+        private AddPrint userControl1;
         private System.Windows.Forms.Panel sidePanel;
-        private UserControl2 userControl2;
-        private UserControl4 userControl4;
-        private UserControl3 userControl3;
+        private OrderProposition userControl2;
+        private AddStock userControl4;
+        private Inventory userControl3;
         private System.Windows.Forms.Button btnBack;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace project_ima
 {
-    partial class UserControl5
+    partial class OrderForm
     {
         /// <summary> 
         /// Variable nécessaire au concepteur.

@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace project_ima
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        static Form1 _obj;
+        static MainForm _obj;
 
-        public static Form1 Instance
+        public static MainForm Instance
         {
             get
             {
                 if (_obj == null)
                 {
-                    _obj = new Form1();
+                    _obj = new MainForm();
 
                 }
                 return _obj;
@@ -39,7 +39,7 @@ namespace project_ima
             set { btnBack = value;  }
         }
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             sidePanel.Height = button1.Height;
@@ -104,6 +104,11 @@ namespace project_ima
             sidePanel.Top = button2.Top;
             userControl2.BringToFront();
             btnBack.Visible = false;
+        }
+
+        private void userControl4_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

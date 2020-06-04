@@ -12,7 +12,7 @@ using System.Text.RegularExpressions;
 
 namespace project_ima
 {
-    public partial class UserControl4 : UserControl
+    public partial class AddStock : UserControl
     {
         //connection object to db
         public string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;
@@ -29,7 +29,7 @@ namespace project_ima
         // declare the database reader
         public OleDbDataReader dbReader = null;
 
-        public UserControl4()
+        public AddStock()
         {
             InitializeComponent();
         }

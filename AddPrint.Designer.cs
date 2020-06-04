@@ -1,6 +1,6 @@
 ﻿namespace project_ima
 {
-    partial class UserControl1
+    partial class AddPrint
     {
         /// <summary> 
         /// Variable nécessaire au concepteur.

@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace project_ima
 {
-    partial class UserControl3
+    partial class Inventory
     {
         /// <summary> 
         /// Variable nécessaire au concepteur.

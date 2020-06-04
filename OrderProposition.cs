@@ -12,7 +12,7 @@ using System.Text.RegularExpressions;
 
 namespace project_ima
 {
-    public partial class UserControl2 : UserControl
+    public partial class OrderProposition : UserControl
     {
         //connection object to db
         public string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;
@@ -27,7 +27,7 @@ namespace project_ima
         // declare the database reader
         public OleDbDataReader dbReader = null;
 
-        public UserControl2()
+        public OrderProposition()
         {
             InitializeComponent();
         }
@@ -109,23 +109,23 @@ namespace project_ima
             {
                 if (e.ColumnIndex == 0)
                 {
-                    if (Form1.Instance.PnlContainer.Controls.ContainsKey("UserControl5"))
+                    if (MainForm.Instance.PnlContainer.Controls.ContainsKey("UserControl5"))
                     {
-                        Form1.Instance.PnlContainer.Controls.RemoveAt(1);
+                        MainForm.Instance.PnlContainer.Controls.RemoveAt(1);
                     }
 
-                    UserControl5.datagridRow = dataGridView1.Rows[e.RowIndex]; 
+                    OrderForm.datagridRow = dataGridView1.Rows[e.RowIndex]; 
 
-                    if (!Form1.Instance.PnlContainer.Controls.ContainsKey("UserControl5"))
+                    if (!MainForm.Instance.PnlContainer.Controls.ContainsKey("UserControl5"))
                     {
-                        UserControl5 userControl5 = new UserControl5();
+                        OrderForm userControl5 = new OrderForm();
                         userControl5.Dock = DockStyle.Fill;
-                        Form1.Instance.PnlContainer.Controls.Add(userControl5);
+                        MainForm.Instance.PnlContainer.Controls.Add(userControl5);
                         
                     }
 
-                    Form1.Instance.PnlContainer.Controls["UserControl5"].BringToFront();
-                    Form1.Instance.BackButton.Visible = true;
+                    MainForm.Instance.PnlContainer.Controls["UserControl5"].BringToFront();
+                    MainForm.Instance.BackButton.Visible = true;
                 }
             }
         }

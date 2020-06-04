@@ -12,7 +12,7 @@ using System.Text.RegularExpressions;
 
 namespace project_ima
 {
-    public partial class UserControl5 : UserControl
+    public partial class OrderForm : UserControl
     {
         public static DataGridViewRow datagridRow;
 
@@ -30,7 +30,7 @@ namespace project_ima
         // declare the database reader
         public OleDbDataReader dbReader = null;
 
-        public UserControl5()
+        public OrderForm()
         {
             InitializeComponent();
             label19.Text = datagridRow.Cells[2].Value.ToString();
@@ -182,7 +182,6 @@ namespace project_ima
 
         private void label20_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

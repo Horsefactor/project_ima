@@ -1,6 +1,6 @@
 ﻿namespace project_ima
 {
-    partial class UserControl4
+    partial class AddStock
     {
         /// <summary> 
         /// Variable nécessaire au concepteur.
@@ -32,9 +32,9 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.Add = new System.Windows.Forms.DataGridViewButtonColumn();
             this.diff_value = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,9 +64,9 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(42, 112);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 20);
+            this.label10.Size = new System.Drawing.Size(69, 20);
             this.label10.TabIndex = 15;
-            this.label10.Text = "facture :";
+            this.label10.Text = "Order :";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // dataGridView1
@@ -85,16 +85,6 @@
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(312, 61);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 35);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "search";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Add
             // 
             this.Add.HeaderText = "Add";
@@ -108,6 +98,16 @@
             this.diff_value.MinimumWidth = 6;
             this.diff_value.Name = "diff_value";
             this.diff_value.Width = 125;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(312, 61);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 35);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "search";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // UserControl4
             // 
