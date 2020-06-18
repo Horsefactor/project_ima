@@ -35,6 +35,8 @@
             this.Add = new System.Windows.Forms.DataGridViewButtonColumn();
             this.diff_value = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,17 +111,39 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // UserControl4
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(843, 97);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(129, 35);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Close order";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(843, 54);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(129, 36);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "Refresh";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // AddStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label7);
-            this.Name = "UserControl4";
+            this.Name = "AddStock";
             this.Size = new System.Drawing.Size(985, 624);
             this.Load += new System.EventHandler(this.UserControl4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -136,5 +160,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewButtonColumn Add;
         private System.Windows.Forms.DataGridViewTextBoxColumn diff_value;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
